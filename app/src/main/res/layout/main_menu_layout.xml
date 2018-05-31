@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/lib/tzlillmakeup.com.example.danielmedalsi1234.tzlilmakeup.PriceOffersList"
+    android:id="@+id/lstTopics"
+    android:orientation="vertical"
+    android:background="@drawable/cake">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        >
+    <Button
+        android:id="@+id/BtnAddTopic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Topic"
+        android:textAllCaps="false"
+
+        />
+    <EditText
+        android:id="@+id/txtAddTopic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        />
+        <Button
+            android:id="@+id/BtnOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:visibility="invisible"
+            android:text="Ok"/>
+    </LinearLayout>
+
+    <include layout="@layout/content_main"></include>
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>
